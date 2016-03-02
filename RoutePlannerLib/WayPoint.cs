@@ -17,5 +17,17 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
             Latitude = latitude;
             Longitude = longitude;
         }
+
+        public override string ToString()
+        {
+            string output = "WayPoint: ";
+
+            if (string.IsNullOrEmpty(this.Name) == false)
+            {
+                output += string.Format("{0} ", this.Name);
+            }
+            output += string.Format("{0:0.##}/{1:0.##}", this.Latitude, this.Longitude);
+            return output;
+        }
     }
 }

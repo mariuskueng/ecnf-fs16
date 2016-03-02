@@ -1,8 +1,0 @@
-\\VBOXSVR\share\projects\RoutePlanner\RoutePlannerConsole\bin\Debug\RoutePlannerConsole.exe.config
-\\VBOXSVR\share\projects\RoutePlanner\RoutePlannerConsole\bin\Debug\RoutePlannerConsole.exe
-\\VBOXSVR\share\projects\RoutePlanner\RoutePlannerConsole\bin\Debug\RoutePlannerConsole.pdb
-\\VBOXSVR\share\projects\RoutePlanner\RoutePlannerConsole\obj\Debug\RoutePlannerConsole.exe
-\\VBOXSVR\share\projects\RoutePlanner\RoutePlannerConsole\obj\Debug\RoutePlannerConsole.pdb
-\\VBOXSVR\share\projects\RoutePlanner\RoutePlannerConsole\bin\Debug\RoutePlannerLib.dll
-\\VBOXSVR\share\projects\RoutePlanner\RoutePlannerConsole\bin\Debug\RoutePlannerLib.pdb
-\\VBOXSVR\share\projects\RoutePlanner\RoutePlannerConsole\obj\Debug\RoutePlannerConsole.csprojResolveAssemblyReference.cache
