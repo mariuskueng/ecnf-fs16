@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
 {
-    class City
+    public class City
     {
         public String Name { get; set; }
         public String Country { get; set; }

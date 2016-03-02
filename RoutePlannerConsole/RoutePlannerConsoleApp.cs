@@ -20,6 +20,9 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerConsole
             Console.WriteLine(windisch);
             Console.WriteLine(bern.Distance(tripolis));
 
+            var cities = new Cities();
+            cities.ReadCities("citiesTestDataLab2.txt");
+
             Console.WriteLine("Press any key to quit");
             Console.ReadKey();
         }
