@@ -14,8 +14,11 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerConsole
         {
             Console.WriteLine("Welcome to Routeplanner (Version {0})", Assembly.GetExecutingAssembly().GetName().Version);
 
-            var wayPoint = new WayPoint("Windisch", 47.479319847061966, 8.212966918945312);
-            Console.WriteLine(wayPoint);
+            var windisch = new WayPoint("Windisch", 47.479319847061966, 8.212966918945312);
+            var bern = new WayPoint("Bern", 46.9479739, 7.4474468);
+            var tripolis = new WayPoint("Tripolis", 32.8872094, 13.1913383);
+            Console.WriteLine(windisch);
+            Console.WriteLine(bern.Distance(tripolis));
 
             Console.WriteLine("Press any key to quit");
             Console.ReadKey();
