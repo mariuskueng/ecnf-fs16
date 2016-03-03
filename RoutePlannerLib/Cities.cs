@@ -10,13 +10,24 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
     public class Cities
     {
         public List<City> cities;
+        public int count
+        {
+            get { return this.cities.Count; }
+        }
 
         public Cities()
         {
             this.cities = new List<City>();
         }
 
-        public int ReadCities(string filename)
+        public City this[int index] //indexer implementation
+        {
+            get { return this.cities[index]; }
+            set { this.cities[index] = value; }
+        }
+
+
+public int ReadCities(string filename)
         {
             using (var reader = new StreamReader(filename))
             {
