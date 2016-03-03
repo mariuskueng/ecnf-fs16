@@ -4,13 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Globalization;
+using System.Threading;
 
 namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
 {
     public class Cities
     {
         public List<City> cities;
-        public int count
+        public int Count
         {
             get { return this.cities.Count; }
         }
@@ -22,13 +24,25 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
 
         public City this[int index] //indexer implementation
         {
-            get { return this.cities[index]; }
+            get
+            {
+                if (index > this.cities.Count || index < 0)
+                {
+                    throw new IndexOutOfRangeException("Invalid index in cities list!");
+                }
+                else
+                {
+                    return this.cities[index];
+                }
+            }
             set { this.cities[index] = value; }
         }
 
 
         public int ReadCities(string filename)
         {
+            var count = 0;
+
             using (var reader = new StreamReader(filename))
             {
                 String lines = reader.ReadToEnd();
@@ -43,20 +57,26 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
                             new City(
                                 city[0],
                                 city[1],
-                                Int32.Parse(city[2]),
-                                new WayPoint(city[0], Double.Parse(city[3]), Double.Parse(city[4])
-                           )
-                       ));
+                                Convert.ToInt32(city[2]),
+                                new WayPoint(
+                                    city[0], 
+                                    double.Parse(city[3], CultureInfo.InvariantCulture),
+                                    double.Parse(city[4], CultureInfo.InvariantCulture)
+                                )
+                            )
+                        );
+                        count++;
                     }
                 }
                 catch (IndexOutOfRangeException e)
                 {
-                    throw e;
+                    
                 }
 
+                reader.Close();
 
             }
-            return this.cities.Count;   
+            return count;   
         }
 
         public IEnumerable<City> FindNeighbours(WayPoint location, double distance)

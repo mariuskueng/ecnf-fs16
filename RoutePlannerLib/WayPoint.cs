@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
 {
@@ -26,7 +27,7 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
             {
                 output += string.Format("{0} ", this.Name);
             }
-            output += string.Format("{0:0.##}/{1:0.##}", this.Latitude, this.Longitude);
+            output += string.Format(CultureInfo.InvariantCulture, "{0:N2}/{1:N2}", this.Latitude, this.Longitude);
             return output;
         }
 

@@ -19,6 +19,14 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
             this.Country = Country;
             this.Population = Population;
             this.Location = Location;
+        }
+
+        public City(String Name, String Country, int Population, double latitude, double longitude)
+        {
+            this.Name = Name;
+            this.Country = Country;
+            this.Population = Population;
+            this.Location = new WayPoint(Name, latitude, longitude);
 
         }
     }
