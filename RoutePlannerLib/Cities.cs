@@ -27,7 +27,7 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
         }
 
 
-public int ReadCities(string filename)
+        public int ReadCities(string filename)
         {
             using (var reader = new StreamReader(filename))
             {
@@ -57,6 +57,19 @@ public int ReadCities(string filename)
 
             }
             return this.cities.Count;   
+        }
+
+        public IEnumerable<City> FindNeighbours(WayPoint location, double distance)
+        {
+            List<City> neighbours = new List<City>();
+            foreach (var city in this.cities)
+            {
+                if (city.Location.Distance(location) < distance) {
+                    neighbours.Add(city);
+                }
+            }
+            return neighbours;
+   
         }
     }
 }
