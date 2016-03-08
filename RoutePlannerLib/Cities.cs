@@ -42,13 +42,14 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
         {
             get
             {
-                try
+                var city = this.cities.Find(FindCityDelegate(cityName));
+                if (city != null)
                 {
-                    return this.cities.Find(c => c.Name == cityName);
-                } 
-                catch (KeyNotFoundException e)
+                    return city;
+                }            
+                else
                 {
-                    throw new KeyNotFoundException("City ${cityName} not found. ${e}");
+                    throw new KeyNotFoundException($"City {cityName} not found.");
                 }
             }
         }
@@ -105,6 +106,14 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
             }
             return neighbours;
    
+        }
+
+        public Predicate<City> FindCityDelegate(string name)
+        {
+            return delegate (City c)
+            {
+                return (c.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+            };
         }
     }
 }

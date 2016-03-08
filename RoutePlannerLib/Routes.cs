@@ -10,11 +10,14 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
     ///	<summary>
     ///	Manages	a routes from a	city to	another	city.
     ///	</summary>
+    ///	
+    public delegate void RouteRequestHandler(object sender, RouteRequestEventArgs e);
+
     public class Routes
     {
         private List<Link> routes = new List<Link>();
         private Cities cities;
-        public delegate void RouteRequestHandler(object sender, RouteRequestEventArgs e);
+        
         public event RouteRequestHandler RouteRequested;
 
         public int Count
@@ -62,7 +65,10 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
 
         public List<Link> FindShortestRouteBetween(string _fromCity, string _toCity, TransportMode _mode)
         {
-            RouteRequested(this, new RouteRequestEventArgs(cities[_fromCity], cities[_toCity], _mode));
+            if (RouteRequested != null)
+            { 
+                RouteRequested(this, new RouteRequestEventArgs(cities[_fromCity], cities[_toCity], _mode));
+            }
             return new List<Link>();
         }
     }

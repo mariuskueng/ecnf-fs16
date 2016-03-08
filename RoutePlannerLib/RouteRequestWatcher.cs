@@ -17,6 +17,16 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
 
         public void LogRouteRequests(object sender, RouteRequestEventArgs args)
         {
+
+            if (requests.ContainsKey(args.ToCity))
+            {
+                requests[args.ToCity] += 1;
+            }
+            else
+            {
+                requests.Add(args.ToCity, 1);
+            }
+
             Console.WriteLine("Current Request State");
             Console.WriteLine("---------------------");
 
@@ -28,7 +38,15 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
 
         public int GetCityRequests(City city)
         {
-            return requests.Count;
+            try
+            {
+                return requests[city];
+            }
+            catch
+            {
+
+                return 0;
+            }
         }
     }
 }

@@ -30,6 +30,8 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerConsole
                 Console.WriteLine(city.Name);
             }
 
+            Console.WriteLine(cities["asdf"].Name);
+
             Console.WriteLine("Press any key to quit");
             Console.ReadKey();
         }
