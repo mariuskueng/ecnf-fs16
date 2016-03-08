@@ -104,7 +104,7 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
                     neighbours.Add(city);
                 }
             }
-            return neighbours;
+            return neighbours.OrderBy(o => location.Distance(o.Location));
    
         }
 

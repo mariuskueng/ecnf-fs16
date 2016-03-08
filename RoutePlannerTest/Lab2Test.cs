@@ -215,7 +215,6 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerTest
             Assert.IsTrue(neighbors.Any(c => c.Name == "Dilli"));
         }
 
-        [Ignore]
         [TestMethod]
         public void TestFindNeighboursSorted()
         {
