@@ -23,7 +23,7 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerConsole
             Console.WriteLine(bern.Distance(tripolis));
 
             var cities = new Cities();
-            cities.ReadCities("citiesTestDataLab2.txt");
+            cities.ReadCities("data/citiesTestDataLab2.txt");
 
             foreach (var city in cities.FindNeighbours(rio, 1000))
             {

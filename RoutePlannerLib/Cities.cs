@@ -38,6 +38,21 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
             set { this.cities[index] = value; }
         }
 
+        public City this[string cityName]
+        {
+            get
+            {
+                try
+                {
+                    return this.cities.Find(c => c.Name == cityName);
+                } 
+                catch (KeyNotFoundException e)
+                {
+                    throw new KeyNotFoundException("City ${cityName} not found. ${e}");
+                }
+            }
+        }
+
 
         public int ReadCities(string filename)
         {
