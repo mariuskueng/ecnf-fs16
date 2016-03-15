@@ -29,5 +29,19 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
             this.Location = new WayPoint(Name, latitude, longitude);
 
         }
+
+        public override bool Equals(object o)
+        {
+            if (o != null && o is City)
+            {
+                var otherCity = (City)o;
+                return (Name.ToLower() == otherCity.Name.ToLower() && (Country.ToLower() == otherCity.Country.ToLower()));
+            }
+            else
+            {
+                return false;
+            }
+            
+        }
     }
 }
