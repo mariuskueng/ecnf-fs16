@@ -84,7 +84,7 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
                         count++;
                     }
                 }
-                catch (IndexOutOfRangeException e)
+                catch (IndexOutOfRangeException)
                 {
                     
                 }
