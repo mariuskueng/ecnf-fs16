@@ -58,41 +58,20 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
         public int ReadCities(string filename)
         {
             var count = 0;
-
-            using (var reader = new StreamReader(filename))
+            using (TextReader tr = new StreamReader(filename))
             {
-                String lines = reader.ReadToEnd();
-                var citiesAsStrings = lines.Split('\n');
-
-                try
+                IEnumerable<string[]> citiesAsStrings = tr.GetSplittedLines('\t');
+                foreach (var cs in citiesAsStrings)
                 {
-                    foreach (var c in citiesAsStrings)
-                    {
-                        var city = c.Split('\t');
-                        this.cities.Add(
-                            new City(
-                                city[0],
-                                city[1],
-                                Convert.ToInt32(city[2]),
-                                new WayPoint(
-                                    city[0], 
-                                    double.Parse(city[3], CultureInfo.InvariantCulture),
-                                    double.Parse(city[4], CultureInfo.InvariantCulture)
-                                )
-                            )
-                        );
-                        count++;
-                    }
-                }
-                catch (IndexOutOfRangeException)
-                {
-                    
+                    cities.Add(new City(cs[0].Trim(), cs[1].Trim(),
+                    int.Parse(cs[2]),
+                    double.Parse(cs[3], CultureInfo.InvariantCulture),
+                    double.Parse(cs[4], CultureInfo.InvariantCulture)));
+                    count++;
                 }
 
-                reader.Close();
-
+                return count;
             }
-            return count;   
         }
 
         public IEnumerable<City> FindNeighbours(WayPoint location, double distance)
