@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.IO;
 using System.Collections.Generic;
 using System.Threading;
@@ -74,7 +74,6 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
 
         public List<Link> FindShortestRouteBetween(string fromCity, string toCity, TransportMode mode)
         {
-            //TODO: inform listeners
             if (RouteRequested != null)
             {
                 RouteRequested(this, new RouteRequestEventArgs(cities[fromCity], cities[toCity], mode));
@@ -128,23 +127,24 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
 
         private IEnumerable<Link> ConvertListOfCitiesToListOfLinks(List<City> citiesEnRoute)
         {
-            foreach (var link in routes)
+            var links = new List<Link>();
+            for (int i = 0; i < citiesEnRoute.Count - 1; i++)
             {
-                foreach (var city in citiesEnRoute)
-                {
-                    yield return new Link(link.FromCity, city, link.Distance, link.TransportMode);
-                }
+                yield return new Link(citiesEnRoute[i], citiesEnRoute[i + 1], citiesEnRoute[i].Location.Distance(citiesEnRoute[i + 1].Location));
             }
-            
         }
+
 
         private IEnumerable<Link> GetListOfAllOutgoingRoutes(City visitingCity, TransportMode mode)
         {
-            foreach (var city in routes)
+            foreach (var route in routes)
             {
-                if (city.FromCity.Equals(visitingCity))
+                if (mode.Equals(route.TransportMode))
                 {
-                    yield return city;
+                    if (visitingCity.Equals(route.FromCity) || visitingCity.Equals(route.ToCity))
+                    {
+                        yield return route;
+                    }
                 }
             }
         }
