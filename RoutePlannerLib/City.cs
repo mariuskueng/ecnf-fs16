@@ -35,7 +35,7 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
             if (o != null && o is City)
             {
                 var otherCity = (City)o;
-                return (Name.ToLower() == otherCity.Name.ToLower() && (Country.ToLower() == otherCity.Country.ToLower()));
+                return Name.Equals(otherCity.Name, StringComparison.InvariantCultureIgnoreCase) && Country.Equals(otherCity.Country, StringComparison.InvariantCultureIgnoreCase);
             }
             else
             {
