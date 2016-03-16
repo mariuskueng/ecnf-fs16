@@ -23,14 +23,16 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerConsole
             Console.WriteLine(bern.Distance(tripolis));
 
             var cities = new Cities();
-            cities.ReadCities("data/citiesTestDataLab2.txt");
+            cities.ReadCities("data/citiesTestDataLab4.txt");
 
-            foreach (var city in cities.FindNeighbours(rio, 1000))
+            var routes = new Routes(cities);
+            var count = routes.ReadRoutes("data/linksTestDataLab4.txt");
+            var links = routes.FindShortestRouteBetween("Zürich", "Basel", TransportMode.Rail);
+
+            foreach (var link in links)
             {
-                Console.WriteLine(city.Name);
+                Console.WriteLine($"{link.FromCity.Name} - {link.ToCity.Name}");
             }
-
-            Console.WriteLine(cities["asdf"].Name);
 
             Console.WriteLine("Press any key to quit");
             Console.ReadKey();
