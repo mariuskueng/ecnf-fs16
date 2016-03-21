@@ -57,33 +57,29 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
 
         public int ReadCities(string filename)
         {
-            var count = 0;
             using (TextReader tr = new StreamReader(filename))
             {
                 IEnumerable<string[]> citiesAsStrings = tr.GetSplittedLines('\t');
-                foreach (var cs in citiesAsStrings)
-                {
-                    cities.Add(new City(cs[0].Trim(), cs[1].Trim(),
-                    int.Parse(cs[2]),
-                    double.Parse(cs[3], CultureInfo.InvariantCulture),
-                    double.Parse(cs[4], CultureInfo.InvariantCulture)));
-                    count++;
-                }
 
-                return count;
+                var newCities = citiesAsStrings
+                    .Select(cs => new City(
+                        cs[0].Trim(), cs[1].Trim(),
+                        int.Parse(cs[2]),
+                        double.Parse(cs[3], CultureInfo.InvariantCulture),
+                        double.Parse(cs[4], CultureInfo.InvariantCulture))
+                    )
+                    .ToList();
+
+                cities.AddRange(newCities);
+                return newCities.Count;
             }
         }
 
         public IEnumerable<City> FindNeighbours(WayPoint location, double distance)
         {
-            List<City> neighbours = new List<City>();
-            foreach (var city in this.cities)
-            {
-                if (city.Location.Distance(location) < distance) {
-                    neighbours.Add(city);
-                }
-            }
-            return neighbours.OrderBy(o => location.Distance(o.Location));
+            return cities
+                .Where(c => c.Location.Distance(location) < distance)
+                .OrderBy(o => location.Distance(o.Location));
    
         }
 

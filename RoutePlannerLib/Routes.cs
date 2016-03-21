@@ -28,6 +28,15 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
             }
         }
 
+        public City[] FindCities(TransportMode transportMode)
+        {
+            return routes
+                .Where(l => l.TransportMode == transportMode)
+                .SelectMany(c => new []{ c.FromCity, c.ToCity })
+                .Distinct()
+                .ToArray();
+        }
+
         ///	<summary>
         ///	Initializes	the	Routes with	the	cities.
         ///	</summary>
