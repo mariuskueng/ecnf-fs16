@@ -25,7 +25,7 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib.Export
             Worksheet workSheet = workBook.ActiveSheet;
 
             Range formatRange = workSheet.get_Range("A1", "D1");
-            formatRange.Font.Size("14pt");
+            formatRange.Font.Size = 14;
             formatRange.Font.Bold = true;
             formatRange.Cells.BorderAround(XlLineStyle.xlContinuous, XlBorderWeight.xlThin);
 
@@ -38,17 +38,17 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib.Export
 
             foreach (Link link in links)
             {
-                workSheet.Cells[line, 1] = link.FromCity;
-                workSheet.Cells[line, 2] = link.ToCity;
+                workSheet.Cells[line, 1] = link.FromCity.Name;
+                workSheet.Cells[line, 2] = link.ToCity.Name;
                 workSheet.Cells[line, 3] = link.Distance;
-                workSheet.Cells[line, 3] = link.TransportMode;
+                workSheet.Cells[line, 4] = link.TransportMode;
+                line++;
             }
 
             excelApp.DisplayAlerts = false;
             workBook.SaveAs(fileName);
             workBook.Close();
             excelApp.Quit();
-            return;
         }
     }
 }
