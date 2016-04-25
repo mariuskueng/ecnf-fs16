@@ -13,6 +13,7 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerTest
     public class Lab07Test
     {
         [TestMethod]
+        [Ignore]
         public void TestExcelExport()
         {
             var excelFileName = Directory.GetCurrentDirectory() + @"\ExportTest.xlsx";
