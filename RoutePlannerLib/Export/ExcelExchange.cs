@@ -25,6 +25,7 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib.Export
             Worksheet workSheet = workBook.ActiveSheet;
 
             Range formatRange = workSheet.get_Range("A1", "D1");
+            formatRange.EntireColumn.ColumnWidth = 25;
             formatRange.Font.Size = 14;
             formatRange.Font.Bold = true;
             formatRange.Cells.BorderAround(XlLineStyle.xlContinuous, XlBorderWeight.xlThin);
