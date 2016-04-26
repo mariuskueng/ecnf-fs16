@@ -13,7 +13,7 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
     ///	
     public delegate void RouteRequestHandler(object sender, RouteRequestEventArgs e);
 
-    public class Routes
+    public class Routes : IRoutes
     {
         private List<Link> routes = new List<Link>();
         private Cities cities;
