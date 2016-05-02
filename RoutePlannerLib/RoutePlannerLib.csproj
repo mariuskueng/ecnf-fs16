@@ -7,8 +7,8 @@
     <ProjectGuid>{530AF240-11F3-4890-AC5D-01BDD27E9435}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RoutePlannerLib</RootNamespace>
-    <AssemblyName>RoutePlannerLib</AssemblyName>
+    <RootNamespace>Fhnw.Ecnf.RoutePlanner.RoutePlannerLib</RootNamespace>
+    <AssemblyName>Fhnw.Ecnf.RoutePlanner.RoutePlannerLib</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

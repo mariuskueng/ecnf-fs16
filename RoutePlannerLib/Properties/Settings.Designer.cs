@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RoutePlannerLib.Properties {
+namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -23,12 +23,15 @@ namespace RoutePlannerLib.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("Fhnw.Ecnf.RoutePlanner.RoutePlannerLib.Routes")]
         public string RouteAlgorithm {
             get {
                 return ((string)(this["RouteAlgorithm"]));
+            }
+            set {
+                this["RouteAlgorithm"] = value;
             }
         }
     }
