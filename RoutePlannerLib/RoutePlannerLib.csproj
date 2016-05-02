@@ -53,14 +53,26 @@
     <Compile Include="IRoutes.cs" />
     <Compile Include="Link.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
     <Compile Include="RouteRequestEventArgs.cs" />
     <Compile Include="RouteRequestWatcher.cs" />
     <Compile Include="Routes.cs" />
+    <Compile Include="RoutesFactory.cs" />
     <Compile Include="Util\TextReaderExtensions.cs" />
     <Compile Include="WayPoint.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="data\citiesTestDataLab2.txt">
