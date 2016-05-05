@@ -56,6 +56,7 @@
     <Compile Include="Lab4Test.cs" />
     <Compile Include="Lab5Test.cs" />
     <Compile Include="Lab7Test.cs" />
+    <Compile Include="Lab8SerializerTest.cs" />
     <Compile Include="Lab8Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

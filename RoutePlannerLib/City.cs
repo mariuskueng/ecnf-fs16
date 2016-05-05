@@ -13,6 +13,11 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
         public int Population { get; set; }
         public WayPoint Location { get; set; }
 
+        public City()
+        {
+
+        }
+
         public City(String Name, String Country, int Population, WayPoint Location)
         {
             this.Name = Name;

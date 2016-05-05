@@ -13,6 +13,11 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
         public double Longitude { get; set; }
         public double Latitude { get; set; }
 
+        public WayPoint()
+        {
+
+        }
+
         public WayPoint(string name, double latitude, double longitude) {
             Name = name;
             Latitude = latitude;
