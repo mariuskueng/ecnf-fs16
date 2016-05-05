@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Globalization;
 using System.Threading;
+using System.Diagnostics;
 
 namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
 {
@@ -16,6 +17,8 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
         {
             get { return this.cities.Count; }
         }
+        private static TraceSource traceSource =
+            new TraceSource("Cities");
 
         public Cities()
         {
@@ -57,22 +60,33 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
 
         public int ReadCities(string filename)
         {
-            using (TextReader tr = new StreamReader(filename))
+            traceSource.TraceData(TraceEventType.Information, 0, "ReadCities started");
+            try
             {
-                IEnumerable<string[]> citiesAsStrings = tr.GetSplittedLines('\t');
+                using (TextReader tr = new StreamReader(filename))
+                {
+                    IEnumerable<string[]> citiesAsStrings = tr.GetSplittedLines('\t');
 
-                var newCities = citiesAsStrings
-                    .Select(cs => new City(
-                        cs[0].Trim(), cs[1].Trim(),
-                        int.Parse(cs[2]),
-                        double.Parse(cs[3], CultureInfo.InvariantCulture),
-                        double.Parse(cs[4], CultureInfo.InvariantCulture))
-                    )
-                    .ToList();
+                    var newCities = citiesAsStrings
+                        .Select(cs => new City(
+                            cs[0].Trim(), cs[1].Trim(),
+                            int.Parse(cs[2]),
+                            double.Parse(cs[3], CultureInfo.InvariantCulture),
+                            double.Parse(cs[4], CultureInfo.InvariantCulture))
+                        )
+                        .ToList();
 
-                cities.AddRange(newCities);
-                return newCities.Count;
+                    cities.AddRange(newCities);
+                    traceSource.TraceData(TraceEventType.Information, 0, "ReadCities ended");
+                    return newCities.Count;
+                }
             }
+            catch (FileNotFoundException e)
+            {
+                traceSource.TraceData(TraceEventType.Critical, 1, e.StackTrace);
+                throw e;
+            }
+            
         }
 
         public IEnumerable<City> FindNeighbours(WayPoint location, double distance)

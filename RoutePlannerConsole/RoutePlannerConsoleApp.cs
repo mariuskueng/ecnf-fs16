@@ -14,6 +14,17 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerConsole
         {
             Console.WriteLine("Welcome to Routeplanner (Version {0})", Assembly.GetExecutingAssembly().GetName().Version);
 
+            try
+            {
+                var cities = new Cities();
+                cities.ReadCities("data/citiesTestDataLab4.txt");
+            }
+            catch (Exception)
+            {
+                //throw;
+            }
+            
+
             Console.WriteLine("Press any key to quit");
             Console.ReadKey();
         }
