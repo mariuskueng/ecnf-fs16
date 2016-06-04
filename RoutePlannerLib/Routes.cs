@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Linq;
 using Fhnw.Ecnf.RoutePlanner.RoutePlannerLib;
+using System.Threading.Tasks;
 
 namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
 {
@@ -132,6 +133,18 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
             IEnumerable<Link> paths = ConvertListOfCitiesToListOfLinks(citiesEnRoute);
 
             return paths.ToList();
+        }
+
+        public Task<List<Link>> FindShortestRouteBetweenAsync(string fromCity, string toCity,
+                                                TransportMode mode)
+        {
+            return Task.Run(() => FindShortestRouteBetween(fromCity, toCity, mode));
+        }
+
+        public Task<List<Link>> FindShortestRouteBetweenAsync(string fromCity, string toCity,
+                                        TransportMode mode, Progress<string> progress)
+        {
+            return Task.Run(() => FindShortestRouteBetween(fromCity, toCity, mode));
         }
 
         private IEnumerable<Link> ConvertListOfCitiesToListOfLinks(List<City> citiesEnRoute)
