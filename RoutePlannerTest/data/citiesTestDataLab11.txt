@@ -1,0 +1,83 @@
+Mumbai	India	12383146	18.96	72.82
+Buenos Aires	Argentina	12116379	-34.61	-58.37
+Karachi	Pakistan	10537226	24.86	67.01
+Manila	Philippines	10232924	14.62	120.97
+Dilli	India	10203687	28.67	77.21
+São Paulo	Brazil	10194978	-23.53	-46.63
+Istanbul	Turkey	9418987	41.01	28.96
+Shanghai	China	9005576	31.23	121.47
+Dhaka	Bangladesh	8942250	23.70	90.39
+Jakarta	Indonesia	8827879	-6.18	106.83
+México	Mexico	8681360	19.43	-99.14
+Moskva	Russia	8368162	55.75	37.62
+Lagos	Nigeria	8349723	6.45	3.47
+Tokyo	Japan	8240088	35.67	139.77
+Lima	Peru	8113023	-12.07	-77.05
+New York	United States of America	8052657	40.67	-73.94
+al-Qahira	Egypt	7937654	30.06	31.25
+Tehran	Iran	7893721	35.67	51.43
+London	United Kingdom	7417688	51.52	-0.10
+Bogotá	Colombia	6837844	4.63	-74.09
+Beijing	China	6618987	39.93	116.40
+Krung Thep	Thailand	6610764	13.73	100.50
+Kinshasa	Congo (Dem. Rep.)	6541264	-4.31	15.32
+Rio de Janeiro	Brazil	6119753	-22.91	-43.20
+Lahore	Pakistan	5756145	31.56	74.35
+Kolkata	India	4760756	22.57	88.36
+Sankt Peterburg	Russia	4582284	59.93	30.32
+Toronto	Canada	4494229	43.65	-79.38
+Chennai	India	4382149	13.09	80.27
+Santiago	Chile	4372781	-33.46	-70.64
+Yangon	Myanmar	4344054	16.79	96.15
+Tianjin	China	4333873	39.13	117.20
+Sydney	Australia	4250065	-33.87	151.21
+Singapore	Singapore	4224028	1.30	103.85
+Wuhan	China	3959728	30.58	114.27
+Los Angeles	United States of America	3903191	34.11	-118.41
+al-Iskandariyah	Egypt	3891030	31.22	29.95
+Ahmadabad	India	3653666	23.03	72.58
+Melbourne	Australia	3610806	-37.81	144.96
+Haidarabad	India	3585607	17.40	78.48
+Shenyang	China	3574135	41.80	123.45
+Pusan	Korea (South)	3504862	35.11	129.03
+Yokohama	Japan	3494851	35.47	139.62
+Guangzhou	China	3473831	23.12	113.25
+Ankara	Turkey	3456076	39.93	32.85
+Abidjan	Ivory Coast	3427543	5.33	-4.03
+Thanh Pho Ho Chi Minh	Vietnam	3415276	10.78	106.69
+ad-Dar-al-Bayda	Morocco	3397023	33.60	-7.62
+Kano	Nigeria	3329914	12.00	8.52
+Berlin	Germany	3274468	52.52	13.38
+Montréal	Canada	3247983	45.52	-73.57
+Madrid	Spain	3169379	40.42	-3.71
+Ibadan	Nigeria	3139503	7.38	3.93
+Surabaya	Indonesia	3038765	-7.24	112.74
+Chicago	United States of America	2939730	41.84	-87.68
+Harbin	China	2904896	45.75	126.65
+Jiddah	Saudi Arabia	2745003	21.50	39.17
+Bandung	Indonesia	2733521	-6.91	107.60
+Cape Town	South Africa	2732971	-33.93	18.46
+Taipei	Taiwan	2722622	25.02	121.45
+Addis Abeba	Ethiopia	2716242	9.03	38.74
+Xian	China	2642121	34.27	108.90
+Pune	India	2640003	18.53	73.84
+Kanpur	India	2631760	26.47	80.33
+al-Jizah	Egypt	2597610	30.01	31.21
+Salvador	Brazil	2590412	-12.97	-38.50
+Kyyiv	Ukraine	2588395	50.44	30.52
+Dar es Salaam	Tanzania	2489826	-6.82	39.28
+Dakar	Senegal	2476372	14.72	-17.48
+Roma	Italy	2455596	41.89	12.50
+Jaipur	India	2415765	26.92	75.80
+Nairobi	Kenya	2411939	-1.29	36.82
+Izmir	Turkey	2398243	38.43	27.15
+Durban	South Africa	2396122	-29.87	30.99
+Chongqing	China	2370072	29.57	106.58
+Taegu	Korea (South)	2369846	35.87	128.60
+Belo Horizonte	Brazil	2347478	-19.92	-43.94
+La Habana	Cuba	2343651	23.13	-82.39
+Luanda	Angola	2297182	-8.82	13.24
+Lakhnau	India	2294183	26.85	80.92
+Cali	Colombia	2283172	3.42	-76.51
+Fortaleza	Brazil	2278219	-3.78	-38.59
+Santo Domingo	Dominican Republic	2252446	18.48	-69.91

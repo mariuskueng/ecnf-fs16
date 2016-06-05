@@ -1,0 +1,1118 @@
+Zürich	Winterthur
+Genève	Lyon
+Basel	Liestal
+Liestal	Aarau
+Bern	Thun
+Lausanne	Genève
+Winterthur	Frauenfeld
+Sankt Gallen	 Dornbirn
+Luzern	Bern
+Biel	Solothurn
+Biel	Bern
+Solothurn	Bern
+Bern	Neuchâtel
+Aarau	Bern
+Köniz	Bern
+La Chaux-de-Fonds	Neuchâtel
+Schaffhausen	Zürich
+Schaffhausen	Basel
+Fribourg	Bern
+Lausanne	Fribourg
+Neuchâtel	Biel
+Chur	Zürich
+Thun	Milano
+Uster	Zürich
+Sion	Lausanne
+Zug	Luzern
+Frauenfeld	Sankt Gallen
+Bellinzona	Altdorf
+Aarau	Zürich
+Herisau	Sankt Gallen
+Solothurn	Aarau
+Schwyz	Luzern
+Schwyz	Zug
+Delémont	Basel
+Biel	Delémont
+Sarnen	Luzern
+Altdorf	Schwyz
+Stans	Luzern
+Glarus	Zürich
+Appenzell	Sankt Gallen
+Sion	Milano
+Zug	Zürich
+Basel	Mulhouse
+Bellinzona	Milano
+Roma	Firenze
+Milano	Torino
+Napoli	Roma
+Napoli	Salerno
+Torino	Genova
+Palermo	 Messina
+Genova	 Nice
+Bologna	Firenze
+Bologna	Milano
+Milano	Genova
+Firenze	Genova
+Bari	Foggia
+Catania	Messina
+Venezia	Padova
+Verona	Milano
+Verona	Padova
+Messina	Reggio di Calabria
+Trieste	Venezia
+Taranto	Bari
+Reggio di Calabria	Salerno
+Ancona	Pescara
+Rimini	Ancona
+Rimini	Bologna
+Siracusa	Catania
+Pescara	Foggia
+Feldkirch	 Dornbirn
+Bregenz	Dornbirn
+Bregenz	Augsburg
+Bregenz	Ulm
+Innsbruck	 Feldkirch
+Salzburg	Innsbruck
+Salzburg	München
+Innsbruck	Augsburg
+Linz	Salzburg
+Wien	Graz
+Linz	Sankt Pölten
+Sankt Pölten	Wien
+Wiener Neustadt	 Wien
+Berlin	Dresden
+Hamburg	Berlin
+München	Nürnberg
+München	Augsburg
+Augsburg	Ulm
+Ulm	Stuttgart
+Köln	Frankfurt
+Frankfurt	Mannheim
+Frankfurt	Hannover
+Hannover	Berlin
+Karlsruhe	Mannheim
+Stuttgart	Mannheim
+Hannover	Hamburg
+Würzburg	Frankfurt
+Nürnberg	Würzburg
+Würzburg	Hannover
+Leipzig	Nürnberg
+Leipzig	Berlin
+Dresden	Frankfurt
+Karlsruhe	Freiburg
+Freiburg	Basel
+Paris	Lille
+Paris	Le Havre
+Besançon	Belfort
+Besançon	Dijon
+Colmar	Strasbourg
+Mulhouse	Colmar
+Belfort	Mulhouse
+Nancy	Paris
+Strasbourg	Nancy
+Marseille	Avignon
+Avignon	Lyon
+Marseille	Nice
+Lyon	Mâcon
+Mâcon	Dijon
+Dijon	Paris
+Faisalabad	Shiraz
+Kolkata	Kanpur
+Thanh Pho Ho Chi Minh	Salvador
+Moskva	Changsha
+Kinshasa	Buenos Aires
+Jinan	Dakar
+Chengdu	London
+Qingdao	Salvador
+Tegucigalpa	Durban
+Kalyan	Haidarabad
+Lanzhou	Shiraz
+al-Qahira	New York
+Makasar	Adana
+Kinshasa	Brasília
+San Antonio	Dilli
+Wien	Umm Durman
+Sydney	Puebla
+Kolkata	Ibadan
+Jinan	Harbin
+Izmir	Changsha
+La Habana	Semarang
+Rawalpindi	London
+Lagos	Xianggang
+Chicago	Lahore
+La Habana	Bhopal
+Tokyo	Makasar
+Shiraz	Brazzaville
+Bhopal	Medan
+Stockholm	Jakarta
+Luanda	Jiddah
+Yokohama	Barcelona
+Stockholm	Tehran
+Taegu	Tehran
+Los Angeles	Fushun
+Jilin	Faisalabad
+Zhengzhou	Valencia
+Buenos Aires	London
+Hyderabad	Anshan
+Belo Horizonte	Shiraz
+Manila	Sydney
+Qingdao	Shiraz
+México	Cape Town
+Adana	Patna
+Jiulong	Singapore
+Lahore	Kharkiv
+Izmir	Harare
+Yerevan	al-Qahira
+Philadelphia	Xianggang
+Shiraz	Nanjing
+Lanzhou	München
+Indore	Guadalajara
+Tianjin	Jilin
+Douala	Medan
+Tegucigalpa	Jekaterinburg
+al-Iskandariyah	Anshan
+Jakarta	Pretoria
+São Paulo	Thanh Pho Ho Chi Minh
+Rawalpindi	Ankara
+Guadalajara	Manaus
+Toronto	Palembang
+Barcelona	Karachi
+Accra	Chicago
+Moskva	Taipei
+Porto Alegre	Makasar
+Houston	Jakarta
+Hangzhou	Douala
+Chicago	Dhaka
+Accra	Beijing
+Bursa	al-Qahira
+Medan	Minsk
+Barranquilla	Curitiba
+Shiraz	Taipei
+Kaduna	Paris
+Jiulong	Bhopal
+Changchun	Santo Domingo
+Melbourne	Taegu
+Taegu	México
+Jaipur	Guadalajara
+Brazzaville	Semarang
+Pretoria	Guadalajara
+Qingdao	Brazzaville
+Nagpur	Sankt Peterburg
+Shiraz	Los Angeles
+Kaohsiung	Shiraz
+Córdoba	Vancouver
+Luanda	Harare
+al-Iskandariyah	Manaus
+Tijuana	Moskva
+Dilli	Jiddah
+Barcelona	Brisbane
+Bursa	Beijing
+Nagpur	Dhaka
+Kawasaki	Jiulong
+Harare	Guangzhou
+Quito	Mumbai
+Kinshasa	San Antonio
+Wuhan	Rosario
+Rosario	Thana
+Lahore	Kawasaki
+Pune	Guayaquil
+Thana	Chengdu
+Brazzaville	Shijiazhuang
+Dilli	Kharkiv
+Melbourne	Vadodara
+Los Angeles	Cape Town
+Ecatepec	Kwangju
+Ibadan	Addis Abeba
+Gujranwala	Guadalajara
+Dalian	Lakhnau
+Chicago	Budapest
+Ludhiana	Kabul
+Cape Town	Bhopal
+La Habana	Nagpur
+al-Jizah	Kyyiv
+Fukuoka	Lima
+Soweto	Singapore
+München	Santiago
+Agra	Nairobi
+Krung Thep	Houston
+Dilli	Tianjin
+Chicago	Kuala Lumpur
+Dhaka	Lakhnau
+Umm Durman	Lakhnau
+Phoenix	Douala
+Rio de Janeiro	Harbin
+Berlin	Ha Noi
+Indore	Zhengzhou
+Zhengzhou	Taegu
+al-Iskandariyah	Dakar
+Makkah	Accra
+Taegu	Datong
+Karachi	Beijing
+Nairobi	Belo Horizonte
+Belém	Kinshasa
+Harare	Belo Horizonte
+Jiulong	London
+Chongqing	Rio de Janeiro
+Montréal	Jilin
+Belo Horizonte	Lusaka
+Haidarabad	Shiraz
+Xianggang	Umm Durman
+Yokohama	Chengdu
+San Diego	Pusan
+ar-Ribat	al-Iskandariyah
+Izmir	Medan
+Wuhan	Vadodara
+Datong	Paris
+Puebla	Fortaleza
+Patna	Kalyan
+Shanghai	Lima
+Córdoba	Curitiba
+Chongqing	Novosibirsk
+Hyderabad	Tianjin
+Jaipur	Jiulong
+Jinan	San Diego
+Phnum Pénh	Bandung
+Chennai	Manaus
+Hyderabad	Kampala
+Kaduna	Conakry
+Jiddah	Yangon
+Tangerang	Johannesburg
+Porto Alegre	Tokyo
+Yokohama	Kharkiv
+Abidjan	Kampala
+Dar es Salaam	Hangzhou
+Madrid	Paris
+Rosario	Lahore
+Kyyiv	Melbourne
+New York	Changchun
+Recife	Palembang
+Rosario	Lahore
+Kaohsiung	Caracas
+Nagoya	Yerevan
+Barcelona	Madrid
+Philadelphia	Changsha
+Fukuoka	Los Angeles
+Córdoba	Semarang
+Harbin	Bogotá
+Juárez	Xian
+Budapest	Rio de Janeiro
+Kampala	Kabul
+Lahore	Quito
+Johannesburg	Ecatepec
+Nagoya	Manila
+Chicago	Kobe
+Rosario	Singapore
+Douala	Brisbane
+Taipei	Kyoto
+Tegucigalpa	Pusan
+Valencia	Salvador
+Lima	Jilin
+Taipei	Medellín
+Tehran	New York
+Barranquilla	Jilin
+Changsha	ad-Dar-al-Bayda
+Taegu	Vadodara
+Tabriz	Ecatepec
+Gujranwala	Nagoya
+Phnum Pénh	Adana
+Milano	Yerevan
+Umm Durman	Rawalpindi
+Shiraz	Karachi
+Phnum Pénh	Makkah
+Xian	Dhaka
+ar-Ribat	Rawalpindi
+Los Angeles	Manaus
+Kyoto	Haidarabad
+Dhaka	Khulna
+Kolkata	Philadelphia
+Manaus	Changchun
+Fukuoka	Mashhad
+Wuhan	Istanbul
+Kano	al-Qahira
+Pusan	al-Jizah
+Dallas	Douala
+Qingdao	Khulna
+Abidjan	Porto Alegre
+Dallas	Guayaquil
+Shijiazhuang	Jiddah
+Harare	Vancouver
+Montevideo	Perth
+Belo Horizonte	Berlin
+Moskva	Vadodara
+Bogotá	Xianggang
+Maracaibo	Puebla
+Addis Abeba	Izmir
+Roma	Vancouver
+Lahore	Shiraz
+Nagoya	Adana
+Montevideo	Tegucigalpa
+Belo Horizonte	Shiraz
+Singapore	Kuala Lumpur
+Kampala	Yokohama
+Belo Horizonte	Tegucigalpa
+al-Jizah	Guadalajara
+Milano	Hangzhou
+Chennai	Krung Thep
+Kwangju	Karachi
+al-Qahira	Kampala
+Milano	Guayaquil
+Shijiazhuang	Paris
+Juárez	Bogotá
+Johannesburg	Pune
+Kobe	Novosibirsk
+Philadelphia	Semarang
+Shanghai	São Paulo
+Nanjing	Accra
+Rio de Janeiro	Multan
+Accra	Recife
+Kanpur	Hangzhou
+La Habana	al-Iskandariyah
+Brasília	Soweto
+Tangerang	Jiulong
+Ankara	ad-Dar-al-Bayda
+Multan	Kinshasa
+Stockholm	Sapporo
+Milano	Taipei
+Soweto	Soweto
+Wuhan	Tokyo
+Tianjin	Kobe
+Warszawa	Bhopal
+Jiddah	Nagoya
+Conakry	Adana
+Kyyiv	Curitiba
+Brazzaville	Soweto
+Nagoya	Kabul
+Manaus	Sankt Peterburg
+Tehran	Thana
+Buenos Aires	Yerevan
+Addis Abeba	Beijing
+Tehran	Belo Horizonte
+San Antonio	Budapest
+Shiraz	Minsk
+México	Guangzhou
+Kaduna	al-Iskandariyah
+Manaus	Sapporo
+Maracaibo	Fushun
+Berlin	Novosibirsk
+Jekaterinburg	Buenos Aires
+Lakhnau	Changsha
+Kolkata	Córdoba
+Kano	Rosario
+Qingdao	Chengdu
+Stockholm	Changsha
+Pusan	Kolkata
+Makasar	Bandung
+Vadodara	México
+Minsk	Yokohama
+Fushun	Xianggang
+Nagpur	Mumbai
+Jekaterinburg	Rio de Janeiro
+Makasar	Hyderabad
+al-Jizah	Makasar
+Tegucigalpa	Stockholm
+Yerevan	Jaipur
+Nezahualcóyotl	Mumbai
+Medellín	Houston
+München	Nagoya
+Chennai	London
+Hangzhou	Nanjing
+Wien	Shenyang
+Buenos Aires	Taiyuan
+Ibadan	al-Jizah
+Belém	Umm Durman
+Los Angeles	Shanghai
+Istanbul	Sankt Peterburg
+Curitiba	Luanda
+San Antonio	Karachi
+Novosibirsk	Nagoya
+Conakry	Fukuoka
+Hamburg	Phnum Pénh
+Jilin	Kawasaki
+Ankara	Makasar
+Thana	Pune
+New York	London
+Lima	Brisbane
+Makasar	Soweto
+Taegu	Kharkiv
+Krung Thep	Cali
+Dalian	Phnum Pénh
+al-Iskandariyah	Mashhad
+Kuala Lumpur	Changsha
+al-Jizah	Montevideo
+Brasília	London
+Sapporo	Tabriz
+Fushun	Kwangju
+Johannesburg	al-Qahira
+Adana	Wien
+ad-Dar-al-Bayda	Yangon
+Cape Town	Dar es Salaam
+Taiyuan	Nagoya
+Chongqing	Tehran
+Khulna	Faisalabad
+Yokohama	Philadelphia
+Manila	Montréal
+Nezahualcóyotl	Salvador
+Dallas	Conakry
+Accra	London
+Chicago	Lahore
+Conakry	Umm Durman
+Medellín	Patna
+Thana	Rio de Janeiro
+Luanda	Izmir
+Jakarta	Beograd
+Shijiazhuang	Perth
+Houston	Tabriz
+Kinshasa	Yokohama
+Chengdu	Perth
+Bogotá	Valencia
+Yerevan	Stockholm
+Johannesburg	Thana
+New York	Madrid
+México	Chongqing
+Bursa	São Paulo
+Sapporo	Kawasaki
+Jaipur	Rio de Janeiro
+Barcelona	Hangzhou
+Rosario	Agra
+Wien	Montréal
+Kharkiv	Warszawa
+Chongqing	Chongqing
+Bhopal	Surabaya
+Barranquilla	San Antonio
+Guangzhou	Palembang
+México	Anshan
+Phnum Pénh	Valencia
+ad-Dar-al-Bayda	Wien
+Semarang	Phoenix
+Philadelphia	Caracas
+Tokyo	Manila
+Conakry	Dilli
+Kyyiv	Lahore
+Luanda	Dakar
+Dar es Salaam	Surabaya
+Izmir	Kyoto
+Lahore	Hangzhou
+Tbilisi	Bandung
+Conakry	Melbourne
+Yangon	Agra
+Jiulong	Beijing
+Yangon	Singapore
+München	Phoenix
+Datong	Lanzhou
+Yerevan	Brazzaville
+Adana	Singapore
+Los Angeles	al-Qahira
+Ahmadabad	Qingdao
+Tokyo	Roma
+Dhaka	Minsk
+Dallas	Umm Durman
+Brisbane	Adana
+Addis Abeba	Belo Horizonte
+Patna	Yangon
+Kharkiv	Adana
+London	Kharkiv
+Minsk	Anshan
+New York	Khulna
+Douala	Durban
+México	Kaduna
+Ibadan	Qingdao
+Houston	Dakar
+Pune	Melbourne
+Harare	Shanghai
+Bhopal	Ibadan
+Ankara	Ahmadabad
+Santiago	Wien
+Soweto	Karachi
+Harare	Haidarabad
+Datong	ar-Ribat
+Milano	Patna
+Dilli	Kampala
+Jekaterinburg	Montréal
+Valencia	Jaipur
+Mumbai	Abidjan
+Hyderabad	Kharkiv
+Cape Town	Luanda
+Surabaya	Shenyang
+Brazzaville	Surabaya
+Valencia	Kinshasa
+Lusaka	Palembang
+Vancouver	Nagoya
+Novosibirsk	Nezahualcóyotl
+Dalian	Stockholm
+Lusaka	Tokyo
+Guayaquil	Palembang
+Sapporo	Jiulong
+Kyoto	Dalian
+Bhopal	Minsk
+Paris	Moskva
+Dalian	Chennai
+Istanbul	Medan
+Umm Durman	Budapest
+Lusaka	Fukuoka
+Nairobi	Novosibirsk
+Manila	Ankara
+Johannesburg	Perth
+Kharkiv	Xian
+Pusan	Makkah
+Haidarabad	Shiraz
+Fushun	Novosibirsk
+Houston	Kalyan
+Porto Alegre	Chennai
+Melbourne	Anshan
+Lanzhou	Kwangju
+Ecatepec	Jiulong
+San Diego	Accra
+Johannesburg	Porto Alegre
+Valencia	Lima
+Milano	Pusan
+Manila	Barranquilla
+Ecatepec	Sydney
+México	Montréal
+Krung Thep	Fukuoka
+Vadodara	Izmir
+Dakar	Lagos
+Kyyiv	Houston
+Nairobi	Juárez
+Phoenix	Bogotá
+Kyoto	Pune
+Salvador	Lagos
+Shanghai	Kaohsiung
+al-Iskandariyah	Dalian
+Lakhnau	Shijiazhuang
+Ahmadabad	Tbilisi
+Kyoto	Toronto
+Brisbane	Shiraz
+München	Pretoria
+Ahmadabad	Cape Town
+Yerevan	Maracaibo
+Shanghai	Brasília
+Moskva	Jaipur
+Durban	Changchun
+Sankt Peterburg	Izmir
+Ankara	Belém
+Lima	Jinan
+Lakhnau	Palembang
+Yerevan	Adana
+Porto Alegre	Stockholm
+Shijiazhuang	Vancouver
+Rosario	Kolkata
+Curitiba	Anshan
+Quito	Pusan
+Umm Durman	Dakar
+Changchun	Nagpur
+Wien	La Habana
+Yokohama	Singapore
+Harbin	Lusaka
+Mumbai	Phoenix
+Chicago	Fushun
+Kabul	Istanbul
+Fukuoka	Paris
+Tijuana	Toronto
+Gujranwala	San Antonio
+Krung Thep	Dilli
+Tianjin	Bandung
+Pune	La Habana
+Bhopal	Pretoria
+Douala	Thanh Pho Ho Chi Minh
+Recife	Sydney
+Istanbul	Barranquilla
+Yerevan	Multan
+Kinshasa	Phoenix
+Salvador	Abidjan
+Luanda	Brazzaville
+San Antonio	Lima
+Wien	Jiddah
+New York	Juárez
+Durban	Lahore
+Adana	Hamburg
+Mashhad	Maracaibo
+Thanh Pho Ho Chi Minh	Jiulong
+Bandung	Dakar
+Lima	San Diego
+Taiyuan	Izmir
+Dilli	Montevideo
+Dilli	Kinshasa
+Palembang	Wien
+Yangon	Milano
+Kyyiv	Melbourne
+Hyderabad	Sapporo
+Dalian	Rio de Janeiro
+Lima	Tehran
+Córdoba	Istanbul
+Pune	Bursa
+Caracas	Belém
+Jiddah	Krung Thep
+Quito	Minsk
+Johannesburg	Faisalabad
+Harare	Vadodara
+Brisbane	Maracaibo
+Kwangju	São Paulo
+Jilin	Los Angeles
+Jakarta	Taiyuan
+Brisbane	Paris
+Palembang	Luanda
+Zhengzhou	Xianggang
+Perth	Khulna
+San Antonio	Rio de Janeiro
+La Habana	Shenyang
+Ludhiana	Shanghai
+Nanjing	Phoenix
+San Diego	Harbin
+Harare	Pretoria
+Faisalabad	Chennai
+Tokyo	Novosibirsk
+Changchun	Curitiba
+Accra	Xian
+Tangerang	Minsk
+Yangon	Jekaterinburg
+Shanghai	Chennai
+Kabul	Datong
+Singapore	Santiago
+Tabriz	Taiyuan
+Izmir	Novosibirsk
+Accra	Paris
+Istanbul	Bandung
+al-Qahira	Guadalajara
+Shiraz	São Paulo
+Shenyang	Ludhiana
+Ludhiana	Toronto
+Bogotá	Guayaquil
+Belo Horizonte	Soweto
+Pretoria	Ankara
+al-Iskandariyah	Brasília
+Sydney	Kabul
+Khulna	Medellín
+Singapore	Ecatepec
+Kobe	Bhopal
+Taiyuan	Qingdao
+al-Jizah	München
+Dalian	Ludhiana
+Johannesburg	Barcelona
+Fushun	Melbourne
+Changchun	Buenos Aires
+al-Jizah	Vadodara
+Salvador	Jiulong
+Pusan	Jekaterinburg
+Dhaka	Adana
+Chengdu	Thanh Pho Ho Chi Minh
+Thanh Pho Ho Chi Minh	Novosibirsk
+Dar es Salaam	Makasar
+Curitiba	Tianjin
+Changchun	Caracas
+Lahore	Jinan
+Tabriz	Kyyiv
+Nanjing	Budapest
+Izmir	Lanzhou
+Indore	Fortaleza
+Nezahualcóyotl	Xianggang
+Thanh Pho Ho Chi Minh	Lanzhou
+Belém	Los Angeles
+Kinshasa	Luanda
+Bogotá	Maracaibo
+Harbin	Surabaya
+Maracaibo	Palembang
+Los Angeles	Jiddah
+Nagpur	Makkah
+Valencia	Wien
+Rio de Janeiro	Fortaleza
+Chennai	Tianjin
+Lima	San Antonio
+México	Brazzaville
+Madrid	Thana
+Bogotá	Harare
+Kanpur	Philadelphia
+Dhaka	Lanzhou
+Mumbai	Taiyuan
+Brazzaville	Sydney
+Hyderabad	Wuhan
+Lagos	Milano
+Ibadan	Rosario
+Istanbul	Cape Town
+Tianjin	Thanh Pho Ho Chi Minh
+al-Qahira	Montevideo
+New York	Adana
+Cape Town	Vancouver
+Kobe	New York
+Kaduna	Barranquilla
+Lahore	Lahore
+Toronto	Cape Town
+Cali	Zhengzhou
+Adana	Douala
+Barcelona	Jiulong
+Harbin	Kampala
+Rawalpindi	Chengdu
+Juárez	San Antonio
+Roma	Sydney
+Lusaka	Guangzhou
+Pretoria	Fukuoka
+Bursa	São Paulo
+Kuala Lumpur	Salvador
+Faisalabad	Izmir
+Dakar	Caracas
+Bogotá	Kampala
+Douala	Haidarabad
+Shanghai	Ludhiana
+Shanghai	Vadodara
+Guadalajara	Chengdu
+Stockholm	Singapore
+Palembang	Kharkiv
+Adana	Yangon
+Wuhan	Rawalpindi
+Sankt Peterburg	Dakar
+Yangon	Houston
+al-Iskandariyah	Medan
+Dallas	Izmir
+Bandung	Kinshasa
+Guadalajara	New York
+Chongqing	ar-Ribat
+Budapest	New York
+Izmir	Jaipur
+Moskva	Cali
+Nagpur	Sankt Peterburg
+Pretoria	Indore
+Makkah	Faisalabad
+Kanpur	Perth
+London	Toronto
+New York	Curitiba
+Yangon	Hyderabad
+Abidjan	Mumbai
+Luanda	Valencia
+Perth	Nagpur
+Kanpur	Kyoto
+Lakhnau	Makasar
+Melbourne	Harare
+Krung Thep	Kanpur
+Kaohsiung	Makkah
+Kyyiv	Warszawa
+Bogotá	Montevideo
+Sydney	Mumbai
+Nagoya	Guadalajara
+Douala	Vadodara
+Krung Thep	Sankt Peterburg
+Chicago	Yangon
+Shanghai	Buenos Aires
+Kampala	Hamburg
+Nairobi	Budapest
+Phoenix	Kuala Lumpur
+Manaus	Kobe
+al-Qahira	Vadodara
+Novosibirsk	Shiraz
+La Habana	Bogotá
+Xian	Mumbai
+Beijing	Vancouver
+Thana	Chengdu
+Mashhad	Belo Horizonte
+Kaduna	Ankara
+Curitiba	San Diego
+Montevideo	Milano
+Kyyiv	Ahmadabad
+Lakhnau	Kano
+Semarang	al-Iskandariyah
+Curitiba	Ecatepec
+Tabriz	Lahore
+Nezahualcóyotl	Manaus
+Brazzaville	Changchun
+Ludhiana	Luanda
+Chicago	Paris
+al-Iskandariyah	Montevideo
+Houston	Krung Thep
+Istanbul	Puebla
+Roma	Hamburg
+Jinan	Caracas
+Nezahualcóyotl	Sankt Peterburg
+Tabriz	Datong
+Adana	Wien
+Jiddah	Jekaterinburg
+Chongqing	Medellín
+Beijing	Shenyang
+Minsk	Fukuoka
+Dhaka	Shijiazhuang
+Makkah	Haidarabad
+Medellín	Shiraz
+Quito	Madrid
+Adana	Lahore
+Kaohsiung	Mumbai
+Budapest	Abidjan
+Tianjin	Kobe
+Jekaterinburg	Salvador
+Kaduna	São Paulo
+Kaohsiung	Anshan
+Sydney	Jakarta
+Córdoba	Izmir
+Haidarabad	Barranquilla
+Dilli	Zhengzhou
+Dakar	Milano
+Kano	Kharkiv
+Lagos	Jakarta
+Ahmadabad	Yangon
+Lima	Dalian
+Changsha	Bhopal
+al-Iskandariyah	Beograd
+Ankara	San Antonio
+Beijing	Moskva
+Belém	Porto Alegre
+Makkah	Puebla
+Hamburg	Maracaibo
+Rio de Janeiro	Guangzhou
+Juárez	Caracas
+Jinan	Lahore
+Zhengzhou	Stockholm
+Thanh Pho Ho Chi Minh	Singapore
+Puebla	Recife
+Fukuoka	San Diego
+Sydney	Krung Thep
+Nagoya	Belém
+Montréal	London
+Los Angeles	Shiraz
+Kaduna	Salvador
+San Diego	Patna
+Madrid	Chennai
+México	Surabaya
+Melbourne	Curitiba
+Faisalabad	Belém
+Indore	Hangzhou
+Thanh Pho Ho Chi Minh	Kaohsiung
+Kobe	San Antonio
+Xianggang	San Antonio
+Faisalabad	Karachi
+Moskva	Hamburg
+Ahmadabad	Jiddah
+Jekaterinburg	Philadelphia
+Kanpur	Changsha
+Budapest	Jiulong
+Salvador	Kolkata
+Guadalajara	Medellín
+Lanzhou	Anshan
+Douala	Kaduna
+Changsha	Jilin
+München	Yokohama
+Kano	Manila
+Kano	Kanpur
+Tijuana	Barranquilla
+Kolkata	Xian
+Kyyiv	Abidjan
+Curitiba	Philadelphia
+Chicago	Surabaya
+Budapest	Milano
+Berlin	Faisalabad
+San Antonio	Roma
+Dhaka	Tabriz
+Faisalabad	Umm Durman
+Chicago	Perth
+Makasar	Zhengzhou
+al-Qahira	Rio de Janeiro
+Bogotá	Umm Durman
+Dhaka	Changsha
+Pune	Wuhan
+Shanghai	Accra
+Xianggang	Minsk
+Kuala Lumpur	Guangzhou
+Sankt Peterburg	Bogotá
+Hamburg	Tbilisi
+Yokohama	Umm Durman
+Xian	Semarang
+Cali	Nagoya
+Manila	Wien
+Singapore	Bandung
+Warszawa	Zhengzhou
+Jakarta	Kolkata
+Douala	Dar es Salaam
+Ankara	Guangzhou
+Kolkata	Rio de Janeiro
+ar-Ribat	Medan
+Tabriz	Roma
+Kalyan	Palembang
+Córdoba	Kabul
+Barcelona	Anshan
+San Diego	Kanpur
+Jekaterinburg	Salvador
+Conakry	Mashhad
+Changchun	Melbourne
+Kwangju	Palembang
+Brasília	Faisalabad
+Qingdao	Dilli
+Guadalajara	Berlin
+Conakry	Philadelphia
+Córdoba	La Habana
+Brazzaville	Pretoria
+München	Nagpur
+Jaipur	Zhengzhou
+Vancouver	Tabriz
+San Antonio	Novosibirsk
+Montevideo	Makkah
+Mumbai	Dakar
+Jiulong	Jiddah
+Lusaka	Lanzhou
+Warszawa	Cali
+Kawasaki	São Paulo
+Maracaibo	Houston
+Qingdao	Wuhan
+Porto Alegre	Soweto
+Puebla	Ludhiana
+Sankt Peterburg	São Paulo
+Xianggang	ad-Dar-al-Bayda
+Bursa	Pretoria
+Dakar	Umm Durman
+Milano	Perth
+München	Budapest
+Kano	Milano
+Jekaterinburg	Hangzhou
+Santo Domingo	Dar es Salaam
+Hamburg	Bandung
+Nairobi	Juárez
+Shanghai	Madrid
+Minsk	Jilin
+Santo Domingo	Taiyuan
+Xianggang	al-Iskandariyah
+Shanghai	Johannesburg
+al-Iskandariyah	Ibadan
+Rawalpindi	Perth
+Anshan	Vadodara
+Sapporo	Dalian
+Kalyan	Nagpur
+Gujranwala	Rosario
+Medan	Dar es Salaam
+Zhengzhou	Budapest
+Johannesburg	Beograd
+Xianggang	Santo Domingo
+Taegu	Medellín
+Kyyiv	Kanpur
+Brazzaville	Sapporo
+Patna	Douala
+Vancouver	Anshan
+Quito	Tangerang
+Kwangju	Santo Domingo
+Dar es Salaam	Shijiazhuang
+Taegu	Santiago
+Karachi	Kaohsiung
+Anshan	Mumbai
+Jaipur	Pretoria
+New York	al-Iskandariyah
+Bursa	Ahmadabad
+Los Angeles	Semarang
+Adana	Kampala
+Kabul	Barcelona
+Ahmadabad	Kharkiv
+Kampala	Jiddah
+Fukuoka	al-Jizah
+Moskva	Kaohsiung
+Moskva	Kinshasa
+Perth	Tbilisi
+Chennai	Karachi
+Phnum Pénh	Thana
+Chennai	Santo Domingo
+San Diego	Rio de Janeiro
+ar-Ribat	Chongqing
+Toronto	Faisalabad
+ad-Dar-al-Bayda	Agra
+Kyoto	Taiyuan
+Ludhiana	Manaus
+Tijuana	Vadodara
+Chongqing	Tehran
+Abidjan	Valencia
+Moskva	Bogotá
+Luanda	Quito
+Indore	al-Iskandariyah
+San Antonio	ad-Dar-al-Bayda
+Singapore	Sankt Peterburg
+Dhaka	Juárez
+Melbourne	Taegu
+Perth	Caracas
+Beijing	Addis Abeba
+Istanbul	Juárez
+Johannesburg	Sapporo
+Jakarta	San Antonio
+Kaduna	Jinan
+Tabriz	Paris
+ad-Dar-al-Bayda	Shijiazhuang
+Curitiba	México
+Zhengzhou	Izmir
+Perth	Jakarta
+Manila	Sankt Peterburg
+Conakry	Cali
+Kabul	Jekaterinburg
+Montréal	Beijing
+Xianggang	Rosario
+Salvador	Xian
+Datong	Kyyiv
+Recife	Lima
+México	Santo Domingo
+New York	Dalian
+México	Paris
+Dhaka	Dhaka
+Ankara	Maracaibo
+Mumbai	al-Iskandariyah
+Curitiba	Brazzaville
+Istanbul	Anshan
+Philadelphia	Fushun
+Budapest	München
+Montevideo	Wien
+Luanda	Palembang
+Montréal	Tbilisi
+al-Iskandariyah	Barranquilla
+Pusan	Kaduna
+ar-Ribat	Stockholm
+al-Jizah	Vancouver
+Phnum Pénh	Taegu
+Jiddah	Haidarabad
+Phnum Pénh	Guadalajara
+London	Medellín
+Los Angeles	Makasar
+Lusaka	Lima
+Jinan	Montevideo
+San Diego	Vancouver
+Qingdao	Sydney
+Agra	Quito
+Addis Abeba	Medan
+Manila	Santo Domingo
+Taipei	Krung Thep
+Ibadan	Berlin
+Bursa	Accra
+Tegucigalpa	Bogotá
+Datong	Tokyo
+Brazzaville	Córdoba
+Ecatepec	Brasília
+Fushun	Adana
+Yerevan	Jiddah
+Paris	Guayaquil
+Montevideo	al-Iskandariyah
+Fortaleza	Fortaleza
+München	Kwangju
+Jilin	Kabul
+Bogotá	Philadelphia
+Haidarabad	Guadalajara
+Izmir	Tijuana
+Jekaterinburg	Semarang
+Xian	Hangzhou
+Bhopal	Rawalpindi
+Mumbai	Tangerang
+Yokohama	Mashhad
+Multan	Sydney
+Adana	Kano
+Houston	Rosario
+Hyderabad	Manila
+Milano	Caracas
+Valencia	Rio de Janeiro
+Fushun	Rosario
+Chicago	Lahore
+Manaus	Harare
+Mumbai	Abidjan
+Tijuana	Kabul
+Taipei	Kyoto
+Jinan	Juárez
+Kaduna	Shanghai
+Wien	Changsha
+Mashhad	Milano
+Jilin	Kalyan
+Wien	Agra
+Fukuoka	Ha Noi
+Khulna	Kano
+Juárez	Los Angeles
+Warszawa	Juárez
+ad-Dar-al-Bayda	Multan
+Ahmadabad	Houston
+Curitiba	Minsk
+Phnum Pénh	Nanjing
+Tangerang	Shijiazhuang
+Warszawa	Izmir
+Douala	Harbin
