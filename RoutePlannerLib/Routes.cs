@@ -154,7 +154,7 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
             }
 
             //convert that city-list into a list of links
-            IEnumerable<Link> paths = ConvertListOfCitiesToListOfLinks(citiesEnRoute);
+            IEnumerable<Link> paths = ConvertListOfCitiesToListOfLinks(citiesEnRoute, mode);
 
             if (reportProgress != null)
             {
@@ -169,25 +169,37 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
             return FindShortestRouteBetween(fromCity, toCity, mode, null);
         }
 
-        public Task<List<Link>> FindShortestRouteBetweenAsync(string fromCity, string toCity,
+        public async Task<List<Link>> FindShortestRouteBetweenAsync(string fromCity, string toCity,
                                                 TransportMode mode)
         {
-            return Task.Run(() => FindShortestRouteBetween(fromCity, toCity, mode, null));
+            return await Task.Run(() => FindShortestRouteBetween(fromCity, toCity, mode, null));
         }
 
-        public Task<List<Link>> FindShortestRouteBetweenAsync(string fromCity, string toCity,
+        public async Task<List<Link>> FindShortestRouteBetweenAsync(string fromCity, string toCity,
                                         TransportMode mode, Progress<string> progress)
         {
-            return Task.Run(() => FindShortestRouteBetween(fromCity, toCity, mode, progress));
+            return await Task.Run(() => FindShortestRouteBetween(fromCity, toCity, mode, progress));
         }
 
-        private IEnumerable<Link> ConvertListOfCitiesToListOfLinks(List<City> citiesEnRoute)
+        public IEnumerable<Link> ConvertListOfCitiesToListOfLinks(List<City> cities, TransportMode mode)
         {
-            var links = new List<Link>();
-            for (int i = 0; i < citiesEnRoute.Count - 1; i++)
+            for (int i = 0; i < cities.Count - 1; i++)
             {
-                yield return new Link(citiesEnRoute[i], citiesEnRoute[i + 1], citiesEnRoute[i].Location.Distance(citiesEnRoute[i + 1].Location));
+                City from = cities[i];
+                City to = cities[i + 1];
+                yield return GetRoute(from, to, mode);
             }
+        }
+
+        public Link GetRoute(City from, City to, TransportMode mode)
+        {
+            foreach (var route in routes)
+            {
+                if (((route.FromCity == from && route.ToCity == to) ||
+                    route.FromCity == to && route.ToCity == from) && route.TransportMode == mode)
+                    return route;
+            }
+            return null;
         }
 
 
@@ -215,6 +227,42 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
             {
                 return other.Distance.CompareTo(Distance);
             }
+        }
+
+        public List<List<Link>> FindAllShortestRoutes()
+        {
+            var routes = new List<List<Link>>();
+            for (int i = 0; i < cities.Count; i++)
+            {
+                for (int j = 0; j < cities.Count; j++)
+                {
+                    routes.Add(FindShortestRouteBetween(cities[i].Name, cities[j].Name, TransportMode.Ship));
+                    routes.Add(FindShortestRouteBetween(cities[i].Name, cities[j].Name, TransportMode.Rail));
+                    routes.Add(FindShortestRouteBetween(cities[i].Name, cities[j].Name, TransportMode.Flight));
+                    routes.Add(FindShortestRouteBetween(cities[i].Name, cities[j].Name, TransportMode.Car));
+                    routes.Add(FindShortestRouteBetween(cities[i].Name, cities[j].Name, TransportMode.Bus));
+                    routes.Add(FindShortestRouteBetween(cities[i].Name, cities[j].Name, TransportMode.Tram));
+                }
+            }
+            return routes;
+        }
+        public List<List<Link>> FindAllShortestRoutesParallel()
+        {
+            var routes = new List<List<Link>>();
+            Parallel.For(0, cities.Count, i =>
+            {
+                Parallel.For(0, cities.Count, j =>
+                {
+                    routes.Add(FindShortestRouteBetween(cities[i].Name, cities[j].Name, TransportMode.Ship));
+                    routes.Add(FindShortestRouteBetween(cities[i].Name, cities[j].Name, TransportMode.Rail));
+                    routes.Add(FindShortestRouteBetween(cities[i].Name, cities[j].Name, TransportMode.Flight));
+                    routes.Add(FindShortestRouteBetween(cities[i].Name, cities[j].Name, TransportMode.Car));
+                    routes.Add(FindShortestRouteBetween(cities[i].Name, cities[j].Name, TransportMode.Bus));
+                    routes.Add(FindShortestRouteBetween(cities[i].Name, cities[j].Name, TransportMode.Tram));
+                });
+
+            });
+            return routes.ToList();
         }
     }
 }
