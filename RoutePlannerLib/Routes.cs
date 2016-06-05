@@ -5,6 +5,7 @@ using System.Threading;
 using System.Linq;
 using Fhnw.Ecnf.RoutePlanner.RoutePlannerLib;
 using System.Threading.Tasks;
+using System.Collections.Concurrent;
 
 namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
 {
@@ -248,7 +249,7 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
         }
         public List<List<Link>> FindAllShortestRoutesParallel()
         {
-            var routes = new List<List<Link>>();
+            var routes = new ConcurrentBag<List<Link>>();
             Parallel.For(0, cities.Count, i =>
             {
                 Parallel.For(0, cities.Count, j =>
