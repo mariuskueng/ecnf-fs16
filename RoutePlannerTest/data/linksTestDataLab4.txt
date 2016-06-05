@@ -11,7 +11,6 @@ Biel	Solothurn
 Biel	Bern
 Solothurn	Bern
 Bern	Neuchâtel
-Thun	Bern
 Köniz	Bern
 La Chaux-de-Fonds	Neuchâtel
 Schaffhausen	Zürich
@@ -31,7 +30,6 @@ Herisau	Sankt Gallen
 Solothurn	Aarau
 Schwyz	Luzern
 Schwyz	Zug
-Basel	Liestal
 Delémont	Basel
 Biel	Delémont
 Sarnen	Luzern

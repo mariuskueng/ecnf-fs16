@@ -139,7 +139,6 @@ Izmir	Changsha
 La Habana	Semarang
 Rawalpindi	London
 Lagos	Xianggang
-Chicago	Lahore
 La Habana	Bhopal
 Tokyo	Makasar
 Shiraz	Brazzaville
@@ -283,7 +282,6 @@ Abidjan	Kampala
 Dar es Salaam	Hangzhou
 Madrid	Paris
 Rosario	Lahore
-Kyyiv	Melbourne
 New York	Changchun
 Recife	Palembang
 Rosario	Lahore
@@ -529,7 +527,6 @@ Milano	Patna
 Dilli	Kampala
 Jekaterinburg	Montréal
 Valencia	Jaipur
-Mumbai	Abidjan
 Hyderabad	Kharkiv
 Cape Town	Luanda
 Surabaya	Shenyang
@@ -775,7 +772,6 @@ Kanpur	Perth
 London	Toronto
 New York	Curitiba
 Yangon	Hyderabad
-Abidjan	Mumbai
 Luanda	Valencia
 Perth	Nagpur
 Kanpur	Kyoto
@@ -1008,7 +1004,6 @@ ad-Dar-al-Bayda	Agra
 Kyoto	Taiyuan
 Ludhiana	Manaus
 Tijuana	Vadodara
-Chongqing	Tehran
 Abidjan	Valencia
 Moskva	Bogotá
 Luanda	Quito
@@ -1016,9 +1011,7 @@ Indore	al-Iskandariyah
 San Antonio	ad-Dar-al-Bayda
 Singapore	Sankt Peterburg
 Dhaka	Juárez
-Melbourne	Taegu
 Perth	Caracas
-Beijing	Addis Abeba
 Istanbul	Juárez
 Johannesburg	Sapporo
 Jakarta	San Antonio
@@ -1094,7 +1087,6 @@ Hyderabad	Manila
 Milano	Caracas
 Valencia	Rio de Janeiro
 Fushun	Rosario
-Chicago	Lahore
 Manaus	Harare
 Mumbai	Abidjan
 Tijuana	Kabul

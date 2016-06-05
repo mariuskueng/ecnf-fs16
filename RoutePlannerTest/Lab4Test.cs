@@ -1,6 +1,10 @@
 ﻿using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
+using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Fhnw.Ecnf.RoutePlanner.RoutePlannerLib;
+using Fhnw.Ecnf.RoutePlanner.RoutePlannerLib.Util;
 
 
 namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerTest
@@ -47,10 +51,10 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerTest
             var cities = new Cities();
             cities.ReadCities(CitiesTestFile);
 
-            var routes = new Routes(cities);
-            var count = routes.ReadRoutes(LinksTestFile);
-            Assert.AreEqual(32, count);
-            Assert.AreEqual(32, routes.Count);
+            var links = new Routes(cities);
+            var count = links.ReadRoutes(LinksTestFile);
+            Assert.AreEqual(30, count);
+            Assert.AreEqual(30, links.Count);
         }
 
 
@@ -60,49 +64,64 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerTest
             var cities = new Cities();
             cities.ReadCities(CitiesTestFile);
             var expectedLinks = new List<Link>();
-            expectedLinks.Add(new Link(new City("Zürich", "Switzerland", 7000, 1,2), 
-                                       new City("Aarau", "Switzerland", 7000, 1,2), 0));
+            expectedLinks.Add(new Link(new City("Zürich", "Switzerland", 7000, 1, 2),
+                new City("Aarau", "Switzerland", 7000, 1, 2), 0));
             expectedLinks.Add(new Link(new City("Aarau", "Switzerland", 7000, 1, 2),
-                                       new City("Liestal", "Switzerland", 7000, 1, 2), 0));
+                new City("Liestal", "Switzerland", 7000, 1, 2), 0));
             expectedLinks.Add(new Link(new City("Liestal", "Switzerland", 7000, 1, 2),
-                                       new City("Basel", "Switzerland", 7000, 1, 2), 0));
+                new City("Basel", "Switzerland", 7000, 1, 2), 0));
 
-            var routes = new Routes(cities);
-            routes.ReadRoutes(LinksTestFile);
+            var links = new Routes(cities);
+            links.ReadRoutes(LinksTestFile);
 
             Assert.AreEqual(28, cities.Count);
 
             // test available cities
-            var links = routes.FindShortestRouteBetween("Zürich", "Basel", TransportMode.Rail); 
-            Assert.IsNotNull(links);
-            Assert.AreEqual(links.Count, expectedLinks.Count);
+            var route = links.FindShortestRouteBetween("Zürich", "Basel", TransportMode.Rail); 
+            Assert.IsNotNull(route);
+            Assert.AreEqual(route.Count, expectedLinks.Count);
 
-            for (var i = 0; i < links.Count; i++)
+            for (var i = 0; i < route.Count; i++)
             {
                 Assert.IsTrue(
-                    (expectedLinks[i].FromCity.Name == links[i].FromCity.Name &&
-                     expectedLinks[i].ToCity.Name == links[i].ToCity.Name) ||
-                    (expectedLinks[i].FromCity.Name == links[i].ToCity.Name &&
-                     expectedLinks[i].ToCity.Name == links[i].FromCity.Name));
+                    (expectedLinks[i].FromCity.Name == route[i].FromCity.Name &&
+                     expectedLinks[i].ToCity.Name == route[i].ToCity.Name) ||
+                    (expectedLinks[i].FromCity.Name == route[i].ToCity.Name &&
+                     expectedLinks[i].ToCity.Name == route[i].FromCity.Name));
             }
 
             // test some other route
-            links = routes.FindShortestRouteBetween("Zürich", "Milano", TransportMode.Rail);
-            Assert.AreEqual(5, links.Count);
+            route = links.FindShortestRouteBetween("Zürich", "Milano", TransportMode.Rail);
+            Assert.AreEqual(5, route.Count);
 
             // test when no routes can be found
-            links = routes.FindShortestRouteBetween("Zürich", "Le Havre", TransportMode.Rail);
-            Assert.IsNull(links);
+            route = links.FindShortestRouteBetween("Zürich", "Le Havre", TransportMode.Rail);
+            Assert.IsNull(route);
 
             try
             {
-                links = routes.FindShortestRouteBetween("doesNotExist", "either", TransportMode.Rail);
+                route = links.FindShortestRouteBetween("doesNotExist", "either", TransportMode.Rail);
                 Assert.Fail("Should throw a KeyNotFoundException");
             }
-            catch(KeyNotFoundException)
+            catch (KeyNotFoundException)
             {
             }
         }
+
+        [TestMethod]
+        public void TestGetSplittedLines()
+        {
+
+            using (TextReader tr = new StreamReader(CitiesTestFile))
+            {
+                var citiesAsStrings = tr.GetSplittedLines('\t').ToArray();
+
+                // just check the name of the first and last city in list
+                Assert.AreEqual("Zürich", citiesAsStrings[0][0].Trim()); // name
+                Assert.AreEqual("Altdorf", citiesAsStrings[citiesAsStrings.Length - 1][0].Trim()); // name
+
+
+            }
+        }
     }
-    
 }

@@ -41,13 +41,13 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerTest
         [TestMethod]
         public void TestRouteSerialCorrectness4()
         {
-            TestRouteSerialCorrectness("4", 28, 32, 4704, 870, 702, 2552197);
+            TestRouteSerialCorrectness("4", 28, 30, 4704, 870, 702, 2559916);
         }
 
         [TestMethod]
         public void TestRouteSerialCorrectness11()
         {
-            TestRouteSerialCorrectness("11", 83, 178, 41334, 7304, 6806, 145904322);
+            TestRouteSerialCorrectness("11", 83, 170, 41334, 7304, 6806, 144185966);
         }
 
         private void TestRouteSerialCorrectness(string _suffix, int _cities, int _links, int _resultsA, int _resultsB, int _resultsC, int _hash)
@@ -58,6 +58,7 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerTest
 
             var links = new Routes(cities);
             int count = links.ReadRoutes("linksTestDataLab" + _suffix + ".txt");
+
             Assert.AreEqual(_links, count);
 
             List<List<Link>> allRoutesSerial = links.FindAllShortestRoutes();
@@ -86,11 +87,12 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerTest
                     ));
 
             //serialize lists to a string
-            var txtSerial = string.Join("/", allRoutesSerial.Select(i => string.Join(":", i.Select(l => l.FromCity.Name + " " + l.ToCity.Name + " " + l.TransportMode))));
+            var txtSerial = string.Join("\n", allRoutesSerial.Select(i => string.Join(":", i.Select(l => l.FromCity.Name + " " + l.ToCity.Name + " " + l.TransportMode))));
 
             //the algorithm should deliver the expected result
             var hash = txtSerial.Select((ch, index) => ((int)ch) * index).Aggregate((a, b) => a ^ b);
-            Assert.AreEqual(hash, _hash);
+
+            Assert.AreEqual(_hash, hash);
         }
 
 
@@ -98,13 +100,13 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerTest
         [TestMethod]
         public void TestRouteParallelCorrectness4()
         {
-            TestRouteParallelCorrectness("4", 28, 32, 4704, 870, 702);
+            TestRouteParallelCorrectness("4", 28, 30, 4704, 870, 702);
         }
 
         [TestMethod]
         public void TestRouteParallelCorrectness11()
         {
-            TestRouteParallelCorrectness("11", 83, 178, 41334, 7304, 6806);
+            TestRouteParallelCorrectness("11", 83, 170, 41334, 7304, 6806);
         }
 
         private void TestRouteParallelCorrectness(string _suffix,int _cities,int _links,int _resultsA,int _resultsB,int _resultsC)
